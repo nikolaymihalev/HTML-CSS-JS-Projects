@@ -7,3 +7,30 @@
 body{
     font: 14px/1.5 Lato, sans-serif;
 }
+
+.search-bar{
+    margin: 2em auto;
+    background: #3d3534;
+    width: 700px;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+    padding: 1.5em;
+}
+
+.search-bar.items{
+    width: 100%;
+}
+
+.items input{
+    width: 89%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+.items button{
+    width: 10%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background: #000;
+    color: #fff;
+}
+
