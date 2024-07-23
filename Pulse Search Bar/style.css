@@ -23,14 +23,22 @@ body{
 
 .items input{
     width: 89%;
-    padding: 0.5em;
-    border-radius: 0.3em;
+    border: none;
+    outline: none;
 }
+
 .items button{
-    width: 10%;
+    width: 10%;    
+}
+
+.items input,
+.items button{
     padding: 0.5em;
     border-radius: 0.3em;
     background: #000;
     color: #fff;
 }
 
+input[type=text]:focus {
+    border: 3px solid #03fc07;
+}
