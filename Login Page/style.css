@@ -3,3 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font: 14px/1.5 Lato, sans-serif;
+    background: lightcyan;
+
+}
+
+.login-form{
+    background: #fff;
+    margin: 3em auto;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5em;
+}
+
+.login-form h1,
+.login-form form,
+form input,
+form a,
+form button{
+    width: 100%;
+}
+
+form{
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.login-title{
+    width: 100%;
+    padding: 2em 5em;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    text-align: start;
+    margin-bottom: 2.5em;
+    text-decoration: none;
+    color: gray;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+button{
+    border-radius: 2em;
+    height: 3em;
+    font-size: 1.3rem;
+    border: 2px solid #000;
+    font-weight: bold;
+}
