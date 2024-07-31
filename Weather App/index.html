@@ -40,11 +40,18 @@
     <script>
         const apiKey = "863242cfb2b1d357e6093d9a5d19a4b";
         const apiUrl = "ttps://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore";
-        async function chechWeather(){
+        async function chechWeather() {
             const response = await fetch(apiUrl + `&appid=${apiKey}`);
             var data = await response.json();
             console.log(data);
+
+            document.querySelector(".city").innerHTML = data.name;
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "C";
+            document.querySelector(".wind").innerHTML = data.main.speed + " km/h";
+            document.querySelector(".humididty").innerHTML = data.main.humididty + "%";
         }
+
+        chechWeather()
     </script>
 </body>
 
