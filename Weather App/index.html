@@ -54,6 +54,11 @@
             document.querySelector(".wind").innerHTML = data.main.speed + " km/h";
             document.querySelector(".humididty").innerHTML = data.main.humididty + "%";
         
+            if(data.weather[0].main=="Clouds"){
+                weatherIcon.src="images/clouds.png";
+            }else if(data.weather[0].main=="Clear"){
+                weatherIcon.src="images/clear.png";
+            }
         }
         searchBtn.addEventListener("click", () => {
             checkWeather(searchBox.value);
