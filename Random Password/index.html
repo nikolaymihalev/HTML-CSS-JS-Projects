@@ -13,7 +13,7 @@
         <h1>Generate a <br><span>Random Password</span></h1>
         <div class="display">
             <input type="text" id="password" placeholder="Password">
-            <img src="images/copy.png">
+            <img id="copy-pass" src="images/copy.png">
         </div>
         <button id="generate-pass"><img src="images/generate.png">Generate Password</button>
     </div>
@@ -29,6 +29,7 @@
 
         const passwordBox = document.getElementById('password');
         const generateBtn = document.getElementById('generate-pass');
+        const copyImgBtn = document.getElementById('copy-pass');
 
         function createPassword() {
             let password = '';
@@ -41,7 +42,13 @@
             passwordBox.value = password;
         }
 
+        function copyPassword() {
+            passwordBox.select();
+            document.execCommand("copy");
+        }
+
         generateBtn.addEventListener('click', createPassword);
+        copyImgBtn.addEventListener('click', copyPassword);
     </script>
 </body>
 
